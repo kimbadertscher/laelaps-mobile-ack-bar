@@ -1,0 +1,112 @@
+{
+  "event": {
+    "screenTitle": "Ereignis",
+    "back": "Zurück",
+    "more": "Prototyp-Einstellungen",
+    "product": {
+      "camera_vlm": "Kamera · KI",
+      "access_control": "Zutrittskontrolle"
+    },
+    "metaLabel": "Details zum Ereignis",
+    "location": "Ort",
+    "source": {
+      "camera_vlm": "Kamera",
+      "access_control": "Leser"
+    },
+    "time": "Zeit",
+    "frameLabel": "Kamerabild von {source}",
+    "detection": "{label} · {confidence}",
+    "expand": "Kamera im Vollbild zeigen",
+    "collapse": "Vollbild schliessen"
+  },
+  "severity": {
+    "low": "Tief",
+    "medium": "Mittel",
+    "high": "Hoch"
+  },
+  "ackBar": {
+    "region": "Ereignis quittieren",
+    "acknowledge": "Quittieren",
+    "keepObserving": "Weiter beobachten",
+    "stopObserving": "Beobachten beenden",
+    "observedBy": "{name} beobachtet",
+    "observedByYou": "Du beobachtest",
+    "observingSince": "seit {time} · Quittieren ist weiter möglich",
+    "acknowledged": "Quittiert · {outcome}",
+    "acknowledgedBy": "von {name} · {time}",
+    "you": "dir",
+    "backToEvents": "Zurück zu den Ereignissen"
+  },
+  "sheet": {
+    "title": "Ereignis quittieren",
+    "subtitle": "{title} · {source}",
+    "close": "Schliessen",
+    "whatHappened": "Was ist passiert?",
+    "noteRequired": "Notiz nötig",
+    "note": "Notiz",
+    "required": "Pflicht",
+    "optional": "Optional",
+    "placeholder": "Was hast du gesehen?",
+    "hint": "Tippen oder Mikrofon zum Diktieren",
+    "confirm": "Bestätigen",
+    "confirmWith": "Bestätigen · {outcome}",
+    "chooseOutcome": "Wähle ein Ergebnis, um fortzufahren",
+    "addNote": "Notiz hinzufügen, um zu bestätigen"
+  },
+  "voice": {
+    "start": "Notiz diktieren",
+    "stop": "Aufnahme beenden",
+    "recording": "Aufnahme",
+    "recordingHelp": "Tippe auf Stopp, wenn du fertig bist. Der Text landet automatisch in der Notiz.",
+    "voiceNote": "Sprachnotiz · {duration}",
+    "play": "Sprachnotiz abspielen",
+    "pause": "Sprachnotiz pausieren",
+    "rerecord": "Neu aufnehmen",
+    "unavailable": "Mikrofon nicht verfügbar. Bitte Notiz tippen.",
+    "demoTranscript": {
+      "evt-cam-high": "Person kauert am Steuerpult, etwa zwölf Sekunden halb hinter dem Pumpengehäuse verdeckt. Sieht nach Manipulation aus, kein Werkzeug sichtbar.",
+      "evt-access-medium": "Tür B2 noch offen, niemand im Gang sichtbar. Der Badge von M. Keller steht heute Nacht nicht auf der Zutrittsliste.",
+      "evt-cam-low": "Lieferwagen in der Feuerwehrzufahrt mit Warnblinker, Fahrer nicht sichtbar. Ich rufe die Standortleitung wegen des Lieferplans an.",
+      "fallback": "Kamera geprüft, Lage wie im Alarm beschrieben."
+    }
+  },
+  "outcomes": {
+    "confirmed_intrusion": "Bestätigter Einbruch",
+    "false_alarm": "Fehlalarm",
+    "authorized_person": "Berechtigte Person",
+    "needs_follow_up": "Nachkontrolle nötig",
+    "authorized_door_closed": "Berechtigt, Tür geschlossen",
+    "unauthorized_entry": "Unberechtigter Zutritt",
+    "reader_fault": "Leserfehler",
+    "known_delivery": "Bekannte Lieferung",
+    "report_to_site": "An Standort melden"
+  },
+  "push": {
+    "app": "LEA · Operator",
+    "now": "jetzt",
+    "title": "Alarm {severity} · {site}",
+    "body": "{title}. {source} · {time}",
+    "open": "Ereignis öffnen: {title}"
+  },
+  "demo": {
+    "heading": "MobileAckBar",
+    "intro": "Laelaps Quittieren auf dem Handy, Variante A: Leiste plus Bottom Sheet. 03:00, Nachtschicht, eine Hand.",
+    "fixture": "Fixture",
+    "fixtures": {
+      "cameraHigh": "Kamera · hoch",
+      "accessMedium": "Zutrittskontrolle · mittel",
+      "cameraLowObserved": "Kamera · tief · Lars beobachtet"
+    },
+    "startAt": "Ansicht",
+    "push": "Push-Mitteilung",
+    "event": "Ereignisseite",
+    "theme": "Darstellung",
+    "dark": "Dunkel",
+    "light": "Hell",
+    "language": "Sprache",
+    "reset": "Fixtures zurücksetzen",
+    "close": "Schliessen",
+    "figma": "Figma-Datei",
+    "source": "Quellcode auf GitHub"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "event": {
+    "screenTitle": "Event",
+    "back": "Back",
+    "more": "Prototype settings",
+    "product": {
+      "camera_vlm": "Camera · AI",
+      "access_control": "Access control"
+    },
+    "metaLabel": "Event details",
+    "location": "Location",
+    "source": {
+      "camera_vlm": "Camera",
+      "access_control": "Reader"
+    },
+    "time": "Time",
+    "frameLabel": "Camera frame from {source}",
+    "detection": "{label} · {confidence}",
+    "expand": "Show camera full screen",
+    "collapse": "Close full screen"
+  },
+  "severity": {
+    "low": "Low",
+    "medium": "Medium",
+    "high": "High"
+  },
+  "ackBar": {
+    "region": "Acknowledge event",
+    "acknowledge": "Acknowledge",
+    "keepObserving": "Keep observing",
+    "stopObserving": "Stop observing",
+    "observedBy": "{name} is observing",
+    "observedByYou": "You are observing",
+    "observingSince": "since {time} · you can still acknowledge",
+    "acknowledged": "Acknowledged · {outcome}",
+    "acknowledgedBy": "by {name} · {time}",
+    "you": "you",
+    "backToEvents": "Back to events"
+  },
+  "sheet": {
+    "title": "Acknowledge event",
+    "subtitle": "{title} · {source}",
+    "close": "Close",
+    "whatHappened": "What happened?",
+    "noteRequired": "Note required",
+    "note": "Note",
+    "required": "Required",
+    "optional": "Optional",
+    "placeholder": "What did you see?",
+    "hint": "Type or tap the mic to dictate",
+    "confirm": "Confirm",
+    "confirmWith": "Confirm · {outcome}",
+    "chooseOutcome": "Choose an outcome to continue",
+    "addNote": "Add a note to confirm"
+  },
+  "voice": {
+    "start": "Dictate note",
+    "stop": "Stop recording",
+    "recording": "Recording",
+    "recordingHelp": "Tap stop when done. Transcribed automatically into the note.",
+    "voiceNote": "Voice note · {duration}",
+    "play": "Play voice note",
+    "pause": "Pause voice note",
+    "rerecord": "Re-record",
+    "unavailable": "Microphone not available. Type the note instead.",
+    "demoTranscript": {
+      "evt-cam-high": "Person crouching at the control panel, partly hidden behind the pump housing for about twelve seconds. Looks like tampering, no tools visible.",
+      "evt-access-medium": "Door B2 still open, nobody visible in the corridor. Badge entry by M. Keller is not on tonight's access list.",
+      "evt-cam-low": "Van in the fire lane has its hazard lights on, driver not visible. Calling the site lead to check the delivery schedule.",
+      "fallback": "Checked the camera, situation as described in the alert."
+    }
+  },
+  "outcomes": {
+    "confirmed_intrusion": "Confirmed intrusion",
+    "false_alarm": "False alarm",
+    "authorized_person": "Authorized person",
+    "needs_follow_up": "Needs follow-up",
+    "authorized_door_closed": "Authorized, door closed",
+    "unauthorized_entry": "Unauthorized entry",
+    "reader_fault": "Reader fault",
+    "known_delivery": "Known delivery",
+    "report_to_site": "Report to site"
+  },
+  "push": {
+    "app": "LEA · Operator",
+    "now": "now",
+    "title": "{severity} alert · {site}",
+    "body": "{title}. {source} · {time}",
+    "open": "Open event: {title}"
+  },
+  "demo": {
+    "heading": "MobileAckBar",
+    "intro": "Laelaps mobile acknowledge flow, variant A: bar plus bottom sheet. 03:00, night shift, one hand.",
+    "fixture": "Fixture",
+    "fixtures": {
+      "cameraHigh": "Camera · high",
+      "accessMedium": "Access control · medium",
+      "cameraLowObserved": "Camera · low · observed by Lars"
+    },
+    "startAt": "Screen",
+    "push": "Push notification",
+    "event": "Event page",
+    "theme": "Theme",
+    "dark": "Dark",
+    "light": "Light",
+    "language": "Language",
+    "reset": "Reset fixtures",
+    "close": "Close",
+    "figma": "Figma file",
+    "source": "Source on GitHub"
+  }
+}

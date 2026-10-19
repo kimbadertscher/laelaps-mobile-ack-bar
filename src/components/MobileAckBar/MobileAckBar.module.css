@@ -1,0 +1,64 @@
+/* Not positioned on purpose: the sheet layer anchors to the event screen, not the bar. */
+.bar {
+  --tone: var(--severity-high);
+  flex-shrink: 0;
+  background: var(--bg-sheet);
+  padding-bottom: var(--safe-bottom);
+}
+
+.bar[data-severity="medium"] {
+  --tone: var(--severity-medium);
+}
+
+.bar[data-severity="low"] {
+  --tone: var(--severity-low);
+}
+
+.bar[data-state="acknowledged"] {
+  --tone: var(--status-success);
+}
+
+.rail {
+  display: block;
+  height: 3px;
+  background: var(--tone);
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-4) var(--space-1);
+}
+
+.done {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding-bottom: var(--space-1);
+}
+
+.doneIcon {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius-full);
+  background: var(--status-success-subtle);
+  color: var(--status-success);
+}
+
+.doneTitle {
+  margin: 0;
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 600;
+}
+
+.doneMeta {
+  margin: 1px 0 0;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--fg-tertiary);
+}

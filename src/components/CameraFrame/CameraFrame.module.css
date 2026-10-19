@@ -1,0 +1,114 @@
+.frame {
+  --tone: var(--severity-high);
+  position: relative;
+  margin: 0;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  flex-shrink: 0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--bg-camera);
+}
+
+.frame[data-severity="medium"] {
+  --tone: var(--severity-medium);
+}
+
+.frame[data-severity="low"] {
+  --tone: var(--severity-low);
+}
+
+.frame[data-expanded="true"] {
+  position: absolute;
+  inset: 0;
+  z-index: 30;
+  aspect-ratio: auto;
+  border-radius: 0;
+  background: #000;
+}
+
+.scene {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, #333 0%, #0d0d0d 100%);
+}
+
+.floor {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 42%;
+  background: rgb(255 255 255 / 0.05);
+  border-top: 1px solid rgb(255 255 255 / 0.12);
+}
+
+.detection {
+  position: absolute;
+  left: 56%;
+  top: 36%;
+  width: 14%;
+  height: 48%;
+  border: 2px solid var(--tone);
+  border-radius: 2px;
+}
+
+.detectionLabel {
+  position: absolute;
+  left: -2px;
+  bottom: calc(100% + 4px);
+  white-space: nowrap;
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  background: var(--tone);
+  color: var(--fg-on-camera);
+  font-size: 10px;
+  line-height: 14px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.pill {
+  position: absolute;
+  top: 10px;
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  background: rgb(0 0 0 / 0.55);
+  color: var(--fg-on-camera);
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-variant-numeric: tabular-nums;
+}
+
+.topLeft {
+  left: 10px;
+}
+
+.topRight {
+  right: 10px;
+}
+
+.expand {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: var(--radius-sm);
+  background: rgb(0 0 0 / 0.55);
+  color: var(--fg-on-camera);
+}
+
+/* 36px visual like Figma, 44px hit area. */
+.expand::after {
+  content: "";
+  position: absolute;
+  inset: -4px;
+}

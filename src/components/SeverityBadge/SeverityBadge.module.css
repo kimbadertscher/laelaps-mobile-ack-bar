@@ -1,0 +1,34 @@
+.badge {
+  --tone: var(--severity-high);
+  --tone-subtle: var(--severity-high-subtle);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--tone);
+  background: var(--tone-subtle);
+  color: var(--tone);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.badge[data-severity="medium"] {
+  --tone: var(--severity-medium);
+  --tone-subtle: var(--severity-medium-subtle);
+}
+
+.badge[data-severity="low"] {
+  --tone: var(--severity-low);
+  --tone-subtle: var(--severity-low-subtle);
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--tone);
+}

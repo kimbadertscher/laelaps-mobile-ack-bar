@@ -1,0 +1,153 @@
+/*
+  Design tokens, 1:1 with the Figma variable collection "Laelaps Mobile" (Light / Dark).
+  Neutral only. Colour is reserved for severity and the acknowledged state.
+*/
+:root,
+[data-theme="dark"] {
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #171717;
+  --bg-tertiary: #262626;
+  --bg-quaternary: #404040;
+  --bg-sheet: #171717;
+  --bg-solid: #ffffff;
+  --bg-disabled: #262626;
+  --bg-overlay: #000000;
+  --bg-camera: #111111;
+  --fg-primary: #ffffff;
+  --fg-secondary: #d4d4d4;
+  --fg-tertiary: #a3a3a3;
+  --fg-quaternary: #525252;
+  --fg-on-solid: #0a0a0a;
+  --fg-disabled: #525252;
+  --fg-on-camera: #ffffff;
+  --border-primary: #404040;
+  --border-secondary: #262626;
+  --severity-high: #ef4444;
+  --severity-high-subtle: #2b0e0e;
+  --severity-medium: #f97316;
+  --severity-medium-subtle: #2b1608;
+  --severity-low: #a3a3a3;
+  --severity-low-subtle: #262626;
+  --status-success: #22c55e;
+  --status-success-subtle: #0b2b16;
+  color-scheme: dark;
+}
+
+[data-theme="light"] {
+  --bg-primary: #ffffff;
+  --bg-secondary: #fafafa;
+  --bg-tertiary: #f5f5f5;
+  --bg-quaternary: #e5e5e5;
+  --bg-sheet: #ffffff;
+  --bg-solid: #0a0a0a;
+  --bg-disabled: #f5f5f5;
+  --bg-overlay: #0a0a0a;
+  --bg-camera: #262626;
+  --fg-primary: #171717;
+  --fg-secondary: #404040;
+  --fg-tertiary: #525252;
+  --fg-quaternary: #a3a3a3;
+  --fg-on-solid: #ffffff;
+  --fg-disabled: #a3a3a3;
+  --fg-on-camera: #ffffff;
+  --border-primary: #d4d4d4;
+  --border-secondary: #e5e5e5;
+  --severity-high: #dc2626;
+  --severity-high-subtle: #fef2f2;
+  --severity-medium: #ea580c;
+  --severity-medium-subtle: #fff7ed;
+  --severity-low: #737373;
+  --severity-low-subtle: #f5f5f5;
+  --status-success: #16a34a;
+  --status-success-subtle: #f0fdf4;
+  color-scheme: light;
+}
+
+:root {
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-full: 999px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --size-tap-min: 48px;
+  --size-tap-primary: 56px;
+  /* Real phones: the OS home indicator area. The desktop phone frame overrides this to 34px. */
+  --safe-bottom: max(12px, env(safe-area-inset-bottom));
+  --font-sans: var(--font-inter), -apple-system, "Segoe UI", Roboto, sans-serif;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--bg-primary);
+  color: var(--fg-primary);
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 2px solid var(--fg-primary);
+  outline-offset: 2px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.eyebrow {
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--fg-tertiary);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
